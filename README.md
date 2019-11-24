@@ -1,2 +1,2 @@
-# HM-3---FizzBuzz
-Javascript training task with HTML and CSS
+# HM-3-FizzBuzz
+Javascript training task at HTML page with responsive CSS elements.
