@@ -1,0 +1,55 @@
+body {
+    display: block;
+    max-width: 1200px;
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    font-size: 16px;
+    margin: 10px;
+}
+.valuesContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+.valueBox {
+    display: block;
+    flex-grow: 1;
+    margin: 10px;
+    text-align: center;
+}
+.buttonsContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+.buttonBox {
+    flex-grow: 1;
+    margin: 10px;
+    text-align: center;
+}
+.myButtons {
+    border: 0;
+    line-height: 2.5;
+    padding: 0px 20px;
+    margin: 10px;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: hsl(210, 50%, 50%);
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.myButtons:hover {
+    background-color: hsl(210, 100%, 50%);
+}
+
+.myButtons:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
