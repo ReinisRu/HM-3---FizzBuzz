@@ -11,10 +11,39 @@
 </head>
 
 <body>
-    <main>
+    <header>
         <h1>FIZZ BUZZ</h1>
-        <div class="controls"></div>
-        <div class="container"></div>
+    </header>
+    <main>
+        <div class="controls">
+            <div class="valuesContainer">
+                <div class="valueBox">
+                    <h2>Start value</h2>
+                    <input type="number" value="1" id="startValue">
+                </div>
+                <div class="valueBox">
+                    <h2>End value</h2>
+                    <input type="number" value="1" id="endValue">
+                </div>
+                <div class="valueBox">
+                    <h2>Fizz Value</h2>
+                    <input type="number" value="3" id="fizzValue">
+                </div>
+                <div class="valueBox">
+                    <h2>Buzz Value</h2>
+                    <input type="number" value="5" id="buzzValue">
+                </div>
+            </div>
+            <div class="buttonsContainer">
+                <div class="buttonBox">
+                    <button type="submit" id="create" class="myButtons">Create</button>
+                </div>
+                <div class="buttonBox">
+                    <button type="submit" id="clear" class="myButtons">Clear</button>
+                </div>
+            </div>
+        </div>
+        <div id="mainContainer"></div>
     </main>
 </body>
 
