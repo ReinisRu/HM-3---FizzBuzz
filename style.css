@@ -48,13 +48,13 @@ input {
     color: #fff;
     text-shadow: 1px 1px 1px #000;
     border-radius: 10px;
-    background-color: hsl(210, 50%, 50%);
+    background-color: rgb(88, 86, 214);
     box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
                 inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
 
 .myButtons:hover {
-    background-color: hsl(210, 100%, 50%);
+    background-color: rgb(0, 122, 255);
 }
 
 .myButtons:active {
@@ -69,11 +69,9 @@ input {
     display: inline-flex;
     width: 60px;
     height: 60px;
-    background-color: aquamarine;
-    color: grey;
+    background-color: rgb(0, 122, 255);
+    color: white;
     text-align: center;
-    vertical-align: center;
-
     padding: 5px;
     border: 1px solid #000;
     border-radius: 10px;
@@ -83,11 +81,9 @@ input {
     display: inline-flex;
     width: 60px;
     height: 60px;
-    background-color: aquamarine;
-    color: grey;
+    background-color: rgb(255, 45, 85);
+    color: white;
     text-align: center;
-    vertical-align: center;
-
     padding: 5px;
     border: 1px solid #000;
     border-radius: 10px;
@@ -97,11 +93,9 @@ input {
     display: inline-flex;
     width: 60px;
     height: 60px;
-    background-color: aquamarine;
-    color: grey;
+    background-color: rgb(52, 199, 89);
+    color: white;
     text-align: center;
-    vertical-align: center;
-
     padding: 5px;
     border: 1px solid #000;
     border-radius: 10px;
@@ -111,11 +105,9 @@ input {
     display: inline-flex;
     width: 60px;
     height: 60px;
-    background-color: aquamarine;
-    color: grey;
+    background-color: rgb(255, 204, 0);
+    color: white;
     text-align: center;
-    vertical-align: center;
-
     padding: 5px;
     border: 1px solid #000;
     border-radius: 10px;
