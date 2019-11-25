@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FizzBuzz</title>
-    <link rel="stylesheet" href="style.css" media="screen">
     <script src="script.js" defer> </script>
+    <link rel="stylesheet" href="style.css" media="screen">
 </head>
 
 <body>
@@ -20,11 +20,13 @@
             <div class="valuesContainer">
                 <div class="valueBox">
                     <h2>Start value</h2>
-                    <input type="number" value="1" id="startValue">
+                    <input type="number" min="1" max="99" placeholder="1-99" value="1" step="1" id="startValue"
+                        required>
                 </div>
                 <div class="valueBox">
                     <h2>End value</h2>
-                    <input type="number" value="100" id="endValue">
+                    <input type="number" min="1" max="100" placeholder="1-100" value="100" step="1" id="endValue"
+                        required>
                 </div>
                 <div class="valueBox">
                     <h2>Fizz value</h2>
@@ -42,6 +44,9 @@
                 </div>
                 <div class="buttonBox">
                     <button type="submit" id="clear" class="myButtons">CLEAR</button>
+                </div>
+                <div class="buttonBox">
+                    <button type="submit" id="reset" class="myButtons">RESET</button>
                 </div>
             </div>
             <hr>

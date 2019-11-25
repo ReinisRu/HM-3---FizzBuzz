@@ -9,12 +9,21 @@ function generate() {
     clearButton.addEventListener("click", onClickClear);
     let submitButton = document.getElementById('create');
     submitButton.addEventListener("click", onClickCreate);
+    let resetButton = document.getElementById('reset');
+    resetButton.addEventListener("click", onClickReset);
 }
 function onClickClear() {
     while (mainContainer.firstChild) {
         mainContainer.removeChild(mainContainer.firstChild);
     }
     console.log('Cleared');
+}
+function onClickReset() {
+    startValue.value = 1;
+    endValue.value = 100;
+    fizzValue.value = 3;
+    buzzValue.value = 5;
+    console.log('Reset');
 }
 function onClickCreate() {
     onClickClear();
@@ -24,10 +33,10 @@ function onClickCreate() {
     let endValue = document.getElementById('endValue').value;
     let fizzValue = document.getElementById('fizzValue').value;
     let buzzValue = document.getElementById('buzzValue').value;
-    console.log('start value - ' + startValue);
-    console.log('end value - ' + endValue);
-    console.log('fizz value - ' + fizzValue);
-    console.log('buzz value - ' + buzzValue);
+    console.log('start value ' + startValue);
+    console.log('end value ' + endValue);
+    console.log('fizz value ' + fizzValue);
+    console.log('buzz value ' + buzzValue);
     for (startValue; startValue <= endValue; startValue++) {
         const element = document.createElement('div');
         element.id = "element";
@@ -51,7 +60,8 @@ function onClickCreate() {
             element.innerText = startValue;
         }
     }
+
 }
 generate();
-onClickClear();
+// onClickClear();
 
