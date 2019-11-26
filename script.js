@@ -27,12 +27,11 @@ function onClickReset() {
 }
 function onClickCreate() {
     onClickClear();
-    console.log('Cleared');
     console.log('Generate');
-    let startValue = document.getElementById('startValue').value;
-    let endValue = document.getElementById('endValue').value;
-    let fizzValue = document.getElementById('fizzValue').value;
-    let buzzValue = document.getElementById('buzzValue').value;
+    let startValue = parseInt(document.getElementById('startValue').value);
+    let endValue = parseInt(document.getElementById('endValue').value);
+    let fizzValue = parseInt(document.getElementById('fizzValue').value);
+    let buzzValue = parseInt(document.getElementById('buzzValue').value);
     console.log('start value ' + startValue);
     console.log('end value ' + endValue);
     console.log('fizz value ' + fizzValue);
@@ -63,5 +62,5 @@ function onClickCreate() {
 
 }
 generate();
-// onClickClear();
+onClickCreate();
 
