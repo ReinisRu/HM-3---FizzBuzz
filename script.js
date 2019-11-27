@@ -39,27 +39,21 @@ function onClickCreate() {
     for (startValue; startValue <= endValue; startValue++) {
         const element = document.createElement('div');
         element.id = "element";
-
         mainContainer.appendChild(element);
         if (startValue % fizzValue === 0 && startValue % buzzValue === 0) {
-            element.setAttribute("id", "element");
             element.setAttribute("class", "FizzBuzz");
             element.innerText = startValue + " FizzBuzz";
         } else if (startValue % fizzValue === 0) {
-            element.setAttribute("id", "element");
             element.setAttribute("class", "Fizz");
             element.innerText = startValue + " Fizz";
         } else if (startValue % buzzValue === 0) {
-            element.setAttribute("id", "element");
             element.setAttribute("class", "Buzz");
             element.innerText = startValue + " Buzz ";
         } else {
-            element.setAttribute("id", "element");
             element.setAttribute("class", "Empty");
             element.innerText = startValue;
         }
     }
-
 }
 generate();
 onClickCreate();
